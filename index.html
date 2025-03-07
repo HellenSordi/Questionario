@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Questionario</title>
 </head>
 
 <body>
@@ -12,13 +12,21 @@
     <input type="text" id="pergunta1" />
     <p>Qual a capital do Brasil</p>
     <input type="text" id="pergunta2" />
-    <p>Qual a capital do rio grande do sul</p>
+    <p>Qual a capital do Rio Grande do Sul</p>
     <input type="text" id="pergunta3" /><br> />
-    <button id="calcular">calcular</botton>
+   <p>Qual a capital de Santa Catarina</p>
+        <input type="text" id="pergunta4"/><br> />
+        <p>Em qual ano foi a Independencia do Brasil</p>
+        <input type="number" id="pergunta5" /><br> />
+        <button id="calcular"classe="btn btn-primary">calcular</botton>
+        
+
          <script>
 let q1=document.getElementById('pergunta1');
 let q2=document.getElementById('pergunta2');
 let q3=document.getElementById('pergunta3');
+let q4=document.getElementyById('pergunta4);
+let q5=document.getElementById('pergunta5');
 let botao=document.getElementById('calcular');
 
 function contabilizarAcertos() {
@@ -31,7 +39,13 @@ function contabilizarAcertos() {
     if (q2.value =='Brasilia'){
         contador++
     }
-    if (q3.value =='POrto alegre'){
+    if (q3.value =='Porto Alegre'){        
+        contador++
+    }
+    if (q4.value =='Florianopolis'){ 
+        contador++
+    }
+    if (q5.value =='1822'){
         contador++
     }
 }
